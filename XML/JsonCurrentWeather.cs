@@ -10,8 +10,14 @@ namespace Json
         public DateTime observation_time { get; set; } // "03:04 PM",
         public int temperature { get; set; } // -6,
         public double weather_code { get; set; } // 116,
-        public Array weather_icons { get; set; } // "https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0004_black_low_cloud.png"
-        public Array weather_descriptions { get; set; } // "Partly cloudy"
+        public int[] getArray { get; }
+        { // weather_icons
+            return weather_icons;
+        } // "https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0004_black_low_cloud.png"
+        public int[] setArray { set; } 
+        { //weather_descriptions
+            return Array;
+        }  // "Partly cloudy"
         public double wind_speed { get; set; } // 19,
         public double wind_degree { get; set; } // 190,   
         public string wind_dir { get; set; } // "S",
